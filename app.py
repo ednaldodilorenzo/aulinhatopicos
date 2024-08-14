@@ -6,5 +6,9 @@ app = Flask(__name__)
 def index():
     return "Hello world"
 
+@app.route("/outra")
+def outra():
+    return "Outra rota"
+
 if __name__ == "__main__":
     app.run()
